@@ -1,0 +1,27 @@
+{
+    "error": false, 
+    "result": {
+        "vrfs": {
+            "default": {
+                "allRoutesProgrammedHardware": true, 
+                "allRoutesProgrammedKernel": true, 
+                "defaultRouteState": "notSet", 
+                "routes": {
+                    "10.0.2.0/24": {
+                        "directlyConnected": true, 
+                        "hardwareProgrammed": true, 
+                        "kernelProgrammed": true, 
+                        "routeAction": "forward", 
+                        "routeType": "connected", 
+                        "vias": [
+                            {
+                                "interface": "Management1"
+                            }
+                        ]
+                    }
+                }, 
+                "routingDisabled": true
+            }
+        }
+    }
+}

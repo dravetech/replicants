@@ -1,0 +1,21 @@
+{
+    "error": false, 
+    "result": {
+        "sourceDetail": "", 
+        "vlans": {
+            "1": {
+                "dynamic": false, 
+                "interfaces": {
+                    "Ethernet1": {
+                        "privatePromoted": false
+                    }, 
+                    "Ethernet2": {
+                        "privatePromoted": false
+                    }
+                }, 
+                "name": "default", 
+                "status": "active"
+            }
+        }
+    }
+}

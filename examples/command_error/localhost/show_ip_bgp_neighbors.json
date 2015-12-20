@@ -1,0 +1,96 @@
+{
+    "error": true, 
+    "exception": "CommandError", 
+    "result": {
+        "args": [
+            "CLI command 3 of 4 'show ip bgp neighbors' failed: unconverted command"
+        ], 
+        "command_error": "Command cannot be used over the API at this time. To see ASCII output, set format='text' in your request", 
+        "commands": [
+            "enable", 
+            "show ip route", 
+            "show ip bgp neighbors", 
+            "show lldp neighbors"
+        ], 
+        "error_code": 1003, 
+        "error_text": "CLI command 3 of 4 'show ip bgp neighbors' failed: unconverted command", 
+        "message": "Error [1003]: CLI command 3 of 4 'show ip bgp neighbors' failed: unconverted command", 
+        "output": [
+            {}, 
+            {
+                "vrfs": {
+                    "default": {
+                        "allRoutesProgrammedHardware": true, 
+                        "allRoutesProgrammedKernel": true, 
+                        "defaultRouteState": "notSet", 
+                        "routes": {
+                            "10.0.2.0/24": {
+                                "directlyConnected": true, 
+                                "hardwareProgrammed": true, 
+                                "kernelProgrammed": true, 
+                                "routeAction": "forward", 
+                                "routeType": "connected", 
+                                "vias": [
+                                    {
+                                        "interface": "Management1"
+                                    }
+                                ]
+                            }
+                        }, 
+                        "routingDisabled": true
+                    }
+                }
+            }, 
+            {
+                "errors": [
+                    "Command cannot be used over the API at this time. To see ASCII output, set format='text' in your request"
+                ]
+            }
+        ], 
+        "trace": [
+            {
+                "command": "enable", 
+                "output": {}
+            }, 
+            {
+                "command": "show ip route", 
+                "output": {
+                    "vrfs": {
+                        "default": {
+                            "allRoutesProgrammedHardware": true, 
+                            "allRoutesProgrammedKernel": true, 
+                            "defaultRouteState": "notSet", 
+                            "routes": {
+                                "10.0.2.0/24": {
+                                    "directlyConnected": true, 
+                                    "hardwareProgrammed": true, 
+                                    "kernelProgrammed": true, 
+                                    "routeAction": "forward", 
+                                    "routeType": "connected", 
+                                    "vias": [
+                                        {
+                                            "interface": "Management1"
+                                        }
+                                    ]
+                                }
+                            }, 
+                            "routingDisabled": true
+                        }
+                    }
+                }
+            }, 
+            {
+                "command": "show ip bgp neighbors", 
+                "output": {
+                    "errors": [
+                        "Command cannot be used over the API at this time. To see ASCII output, set format='text' in your request"
+                    ]
+                }
+            }, 
+            {
+                "command": "show lldp neighbors", 
+                "output": null
+            }
+        ]
+    }
+}
